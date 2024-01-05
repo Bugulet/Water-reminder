@@ -11,7 +11,7 @@ SelectedMinutes.innerText=`${MinuteSlider.value} minutes`;
 StartButton.onclick=()=>{
     clearInterval(intervalHolder);
     intervalHolder=setInterval(UpdateCountdown, 1000);
-    countdownTarget=Date.now()+1000*Number(MinuteSlider.value);
+    countdownTarget=Date.now()+60*1000*Number(MinuteSlider.value);
 };
 
 MinuteSlider.oninput=()=>{
